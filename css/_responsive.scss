@@ -8,6 +8,11 @@ p{
 .header{
   justify-content: space-between;
   height: 80px;
+  &__title {
+    h1{
+      font-size: 40px;
+    }
+  }
 
   &__pc-menu {
     display: flex;
@@ -151,10 +156,4 @@ p{
   }
 }
 
-.btn-area{
-  p{
-    padding-top: 100px;
-    margin-bottom: 50px;
-  }
-}
 

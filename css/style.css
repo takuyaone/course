@@ -186,7 +186,10 @@ li {
 }
 
 .first-view__title {
-  padding-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-size: 28px;
@@ -210,7 +213,7 @@ li {
   text-align: center;
   padding: 0 30px;
   color: #fdfd85;
-  margin-bottom: 150px;
+  margin-bottom: 5%;
 }
 
 .btn {
@@ -472,12 +475,20 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 50vh;
   text-align: center;
+  position: relative;
 }
 
-.btn-area p {
-  padding-top: 50px;
+.btn-area__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.btn-area__content p {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   font-weight: 600;
@@ -503,6 +514,9 @@ li {
   .header {
     justify-content: space-between;
     height: 80px;
+  }
+  .header__title h1 {
+    font-size: 40px;
   }
   .header__pc-menu {
     display: flex;
@@ -613,9 +627,5 @@ li {
   }
   .question .question-item .box p {
     font-size: 22px;
-  }
-  .btn-area p {
-    padding-top: 100px;
-    margin-bottom: 50px;
   }
 }
